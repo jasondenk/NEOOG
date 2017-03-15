@@ -10,11 +10,16 @@ namespace FinalProject.Models
     {
         [Key]
         public int ID { get; set; }
+        [Display(Name = "Item")]
         public string NameType { get; set; }
+        [Display(Name = "Description")]
         public string Info { get; set; }
+        [Display(Name = "Have or Need?")]
         public string GetGive { get; set; }
         public string Quantity { get; set; }
+        [Display(Name = "Date Posted")]
         public DateTime PostTime { get; set; }
+        [Display(Name = "Username")]
         public string ExchangeUserName { get; set; }
 
 

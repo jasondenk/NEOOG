@@ -46,8 +46,10 @@ namespace FinalProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,NameType,Info,GetGive,Quantity,PostTime,ExchangeUserName")] Exchange exchange)
+        public ActionResult Create([Bind(Include = "ID,NameType,Info,GetGive,Quantity")] Exchange exchange)
         {
+            exchange.ExchangeUserName = User.Identity.Name;
+            exchange.PostTime = DateTime.Now;
             if (ModelState.IsValid)
             {
                 db.Exchanges.Add(exchange);
@@ -78,8 +80,14 @@ namespace FinalProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,NameType,Info,GetGive,Quantity,PostTime,ExchangeUserName")] Exchange exchange)
+        public ActionResult Edit([Bind(Include = "ID,NameType,Info,GetGive,Quantity")] Exchange exchange2)
         {
+            Exchange exchange = db.Exchanges.Find(exchange2.ID);
+            exchange.NameType = exchange2.NameType;
+            exchange.Info = exchange2.Info;
+            exchange.GetGive = exchange2.GetGive;
+            exchange.Quantity = exchange2.Quantity;
+
             if (ModelState.IsValid)
             {
                 db.Entry(exchange).State = EntityState.Modified;
