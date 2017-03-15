@@ -1,0 +1,67 @@
+﻿@model FinalProject.Models.Exchange
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Exchange</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Info)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Info)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GetGive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GetGive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExchangeUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExchangeUserName)
+        </dd>
+
+    </dl>
+    <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

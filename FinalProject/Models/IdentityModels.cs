@@ -29,5 +29,7 @@ namespace FinalProject.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FinalProject.Models.Exchange> Exchanges { get; set; }
     }
 }

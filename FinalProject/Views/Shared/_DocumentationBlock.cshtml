@@ -1,0 +1,117 @@
+﻿
+<div class="row documentation-message">
+    <div class="col-md-6">
+        <div class="panel panel-mvc">
+            <div class="panel-heading"><a href="https://www.wunderground.com/weather-forecast/44124">Northeast Ohio Weather</a></div>
+            <div class="panel-body">
+
+                <p>Currently: <img id="WeatherImage" src="" />  &nbsp;&nbsp;&nbsp;Location: <span id="name"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Current Temperature: <span id="temperature"></span></p>
+                <p>Today's Forecast: <span id="forecast"></span></p>
+                <p><span id=""></span></p>
+                <p></p>
+                <p></p>
+<pre>Today:<img id="Day1Image" src="" />    Tomorrow:<img id="Day2Image" src="" />    <span id="Day3"></span>:<img id="Day3Image" src="" />      <span id="Day4"></span>:<img id="Day4Image" src="" />
+                <br />High:<span id="day1high"></span>           High:<span id="day2high"></span>               High:<span id="day3high"></span>              High:<span id="day4high"></span><br />
+Low:<span id="day1low"></span>            Low:<span id="day2low"></span>                Low:<span id="day3low"></span>               Low:<span id="day4low"></span><br /></pre>
+                <script>
+    $(document).ready(function()
+    {
+            $.get("http://api.wunderground.com/api/e0ca6651feeb68a8/conditions/q/OH/Cleveland.json", function (response) {
+                //response
+                console.log(response);
+                $("#WeatherImage").attr("src",response.current_observation.icon_url);
+                $("#name").text(response.current_observation.display_location.city);
+                $("#temperature").text(response.current_observation.temperature_string)
+                $("#weather").text(response.current_observation.weather);
+        });
+    });
+                </script>
+                <script>
+    $(document).ready(function()
+    {
+            $.get("http://api.wunderground.com/api/e0ca6651feeb68a8/forecast/q/OH/Cleveland.json", function (respond) {
+                //response
+                console.log(respond);
+                $("#Day1Image").attr("src", respond.forecast.simpleforecast.forecastday[0].icon_url);
+                $("#day1high").text(respond.forecast.simpleforecast.forecastday[0].high.fahrenheit);
+                $("#day1low").text(respond.forecast.simpleforecast.forecastday[0].low.fahrenheit);
+                $("#Day2Image").attr("src", respond.forecast.simpleforecast.forecastday[1].icon_url);
+                $("#day2high").text(respond.forecast.simpleforecast.forecastday[1].high.fahrenheit);
+                $("#day2low").text(respond.forecast.simpleforecast.forecastday[1].low.fahrenheit);
+                $("#Day3").text(respond.forecast.txt_forecast.forecastday[4].title);
+                $("#Day3Image").attr("src", respond.forecast.simpleforecast.forecastday[2].icon_url);
+                $("#day3high").text(respond.forecast.simpleforecast.forecastday[2].high.fahrenheit);
+                $("#day3low").text(respond.forecast.simpleforecast.forecastday[2].low.fahrenheit);
+                $("#Day4").text(respond.forecast.txt_forecast.forecastday[6].title);
+                $("#Day4Image").attr("src", respond.forecast.simpleforecast.forecastday[3].icon_url);
+                $("#day4high").text(respond.forecast.simpleforecast.forecastday[3].high.fahrenheit);
+                $("#day4low").text(respond.forecast.simpleforecast.forecastday[3].low.fahrenheit);
+                $("#forecast").text(respond.forecast.txt_forecast.forecastday[0].fcttext);
+        });
+    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-mvc">
+            <div class="panel-heading">Organic Gardening Articles</div>
+            <div class="panel-body">
+
+                <!-- Carousel
+                ================================================== -->
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="http://www.realfarmacy.com/how-to-repel-28-garden-pests-with-herbs-and-essential-oils/"><img class="thumbnail" src="http://www.realfarmacy.com/wp-content/uploads/2014/06/cucumber-beetle.jpg" alt="Slide1"></a>
+                            <div class="caption">
+                                <h4>Natural Pest Repellents</h4>
+                                <p> Use essential oils and companion planting to keep your garden pest free this summer.  Click on the picture to view the full article. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.healthy-holistic-living.com/garden-house-diy-pest-control-easier-think-recipes-included.html?t=MAM"><img class="thumbnail" src="http://cdn.healthy-holistic-living.com/wp-content/uploads/2016/06/bugspray.jpg" alt="Slide2"></a>
+                            <div class="caption">
+                                <h4>From Your Garden to Your House DIY Pest Control Is Easier Than You Think (Recipes Included)</h4>
+                                <p>Natural pest control is actually less expensive than using pesticides, and it’s safer for your garden, your family, wildlife and the environment.  Click on picture to view the full article. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.realfarmacy.com/build-bee-hotels-to-help-save-native-bees/"><img class="thumbnail" src="http://www.realfarmacy.com/wp-content/uploads/2016/02/3414009975_a2942609a8_o1.jpg" alt="Slide3"></a>
+                            <div class="caption">
+                                <h4>Help the bees in your area.  Build a bee hotel!</h4>
+                                <p>Bees are an integral part of our ecosystem. A garden with happy, healthy bees grows happy, healthy plants. Why not help these friendly pollinators even more by building “bee hotels”?  Click on the picture to view the full article. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.healthy-holistic-living.com/grow-100-pounds-potatoes-4-square-feet.html?t=MAM"><img class="thumbnail" src="http://cdn.healthy-holistic-living.com/wp-content/uploads/2014/06/potatoes.gif" alt="Slide4"></a>
+                            <div class="caption">
+                                <h4>How to Grow 100 Pounds of Potatoes in 4 Square Feet.</h4>
+                                <p>Potatoes are fairly low maintenance, can be grown in a pot or in the ground, last a fairly long time if stored properly, and can be very nutritious (high in potassium and vitamin C). Here’s more incentive: according to this article, you can grow 100 pounds of potatoes in 4 sq. feet.   Click on the picture to view the full article.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="https://thehomestead.guru/walipini-designs/?utm_campaign=coschedule&utm_source=facebook_page&utm_medium=Libertarian%20Gardeners,%20Homesteaders,%20and%20Survivalists&utm_content=Grow%20Food%20Year%20Round%20in%20a%20$300%20Underground%20Greenhouse"><img class="thumbnail" src="https://thehomestead.guru/wp-content/uploads/2017/03/wal1.jpg" alt="Slide5"></a>
+                            <div class="caption">
+                                <h4>Grow Food Year Round in a $300 Underground Greenhouse</h4>
+                                <p>The word Walipini, derived from the Aymaran language and an indigenous Bolivian tribe, is translated as “a place of warmth” and is an earth sheltered cold frame or transparent-roofed enclosure.  Click on the picture to view the full article.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="carousel-controls">
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div><!-- End Carousel -->
+            </div>
+        </div>
+
+    </div>
+</div>
