@@ -1463,6 +1463,7 @@
     <Content Include="Themes\Metro\Content\Images\arrow-spinner-blue.gif" />
     <Content Include="Themes\Metro\Content\Images\favicon.ico" />
     <Content Include="Themes\Metro\Content\Images\logo.png" />
+    <Content Include="Themes\Metro\Content\Images\NOOG.PNG" />
     <Content Include="Themes\Metro\Content\Scripts\general.js" />
     <Content Include="Themes\Metro\Content\Styles\imports.css" />
     <Content Include="Themes\Metro\Content\Styles\Theme.min.css" />

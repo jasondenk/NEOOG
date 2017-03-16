@@ -1,0 +1,53 @@
+16/03/2017 17:46:31 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:46:31 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:46:31 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:49:40 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 17:49:44 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:49:44 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:49:44 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:49:44 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:55:42 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 17:55:48 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:55:48 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:55:48 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:55:48 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:56:08 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:56:08 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 17:56:08 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 17:56:08 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:02:55 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:02:55 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:02:55 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:02:55 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:04:42 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 18:04:47 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:04:47 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:04:47 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:04:47 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:05:00 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:05:00 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:05:00 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:05:00 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:07:09 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 18:07:14 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:07:14 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:07:14 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:07:14 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:07:28 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:07:28 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:07:28 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:07:28 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:10:25 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 18:10:31 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:10:31 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:10:32 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:10:32 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:10:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:10:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:10:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:10:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:11:23 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:11:23 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:11:23 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 18:11:23 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
+16/03/2017 18:11:37 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).

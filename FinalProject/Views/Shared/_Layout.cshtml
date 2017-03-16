@@ -73,7 +73,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="@Url.Action("Index", "Home")">
-                        <img src="@Url.Content(theme.ThemePath + "/content/images/logo.png")" alt="@Html.Lang("Site.MvcForum")" class="logoimg"/>                        
+                        <img src="@Url.Content(theme.ThemePath + "/content/images/NOOG.png")" alt="@Html.Lang("Site.MvcForum")" class="NOOG"/>                        
                     </a>
                 </div>
 
@@ -100,7 +100,7 @@
         </nav>
     </header>
 
-    <section class="content-strip content-strip-@(User.Identity.IsAuthenticated.ToString().ToLower())">
+    <section class="content-strip content-strip-@(User.Identity.IsAuthenticated.ToString().ToLower())"  id="secondNav">
         <div class="container sub-nav-container">
             <div class="row">
                 <div class="col-sm-12">
