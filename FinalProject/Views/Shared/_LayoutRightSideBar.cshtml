@@ -19,7 +19,7 @@
         <div class="main-side-box clearfix">
             @if (User.Identity.IsAuthenticated)
             {
-                @Html.Action("CreateTopicButton", "Topic")
+                @*@Html.Action("CreateTopicButton", "Topic")*@
             }
             @RenderSection("side", false)
         </div>

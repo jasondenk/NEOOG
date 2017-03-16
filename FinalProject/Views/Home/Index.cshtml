@@ -16,7 +16,9 @@
 @* ### Remove ME - Not needed, just for our forum ### *@
 
 @Html.Action("LatestTopics", "Topic")
-
+<div class="col-lg-6 col-md-6 col-sm-4">
+    @Html.Action("CreateTopicButton", "Topic")
+</div>
 @*
     If you want to show categories on the home page instead of topics
     Just uncomment this action out and delete this text (And comment out the above action)

@@ -1,37 +1,14 @@
-15/03/2017 13:59:52 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:00:56 | MVCForum.Website.dll | Application_Error | MVCForum.Website.MvcApplication | 0 | A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) INNER EXCEPTION: The network path was not found
-15/03/2017 14:01:46 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:02:49 | MVCForum.Website.dll | Application_Error | MVCForum.Website.MvcApplication | 0 | A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) INNER EXCEPTION: The network path was not found
-15/03/2017 14:04:56 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:07:05 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:11:01 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:21:18 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:24:47 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 14:57:23 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 15:02:18 | MVCForum.Website.dll | Application_Error | MVCForum.Website.MvcApplication | 0 | c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\FinalProject\FinalProject\Views\Exchanges\Create.cshtml(79): error CS0103: The name 'Scripts' does not exist in the current context
-15/03/2017 15:03:22 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 15:12:30 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 15:23:17 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Plant Index' was not found for the language English (United Kingdom).
-15/03/2017 15:49:37 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 15:50:55 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:26:28 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:34:36 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:37:33 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:38:57 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:48:08 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:50:33 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:54:31 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 17:59:19 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:00:39 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:16:05 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:41:54 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:45:20 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:45:26 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'SubNav.Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:45:26 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'SubNav.Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:45:36 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'SubNav.Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:45:36 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'SubNav.Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:46:20 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
-15/03/2017 18:46:26 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:46:26 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:46:30 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
-15/03/2017 18:46:30 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:45:19 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 02:45:25 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:45:25 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:47:24 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 02:47:30 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:47:30 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:50:02 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 02:50:07 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:50:07 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:50:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 02:50:50 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 13:51:26 | MVCForum.Website.dll | Application_Start | MVCForum.Website.MvcApplication | 0 | START APP
+16/03/2017 13:51:33 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
+16/03/2017 13:51:33 | MVCForum.Services.dll | GetResourceString | MVCForum.Services.LocalizationService | 0 | This resource key 'Exchanges' was not found for the language English (United Kingdom).
