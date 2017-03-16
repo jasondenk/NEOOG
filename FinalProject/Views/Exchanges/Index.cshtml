@@ -5,7 +5,9 @@
 }
 
 <h2>Index</h2>
+@if (User.Identity.IsAuthenticated)
 
+{
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -34,7 +36,8 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.NameType)
@@ -54,12 +57,19 @@
         <td>
             @Html.DisplayFor(modelItem => item.ExchangeUserName)
         </td>
+       <td>
+           @Html.ActionLink("Details", "Details", new { id = item.ID })
+           
+       </td>
+        @if (User.Identity.Name==item.ExchangeUserName || User.Identity.Name == "admin")
+        { 
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID }) 
         </td>
+        }
     </tr>
 }
 
 </table>
+}

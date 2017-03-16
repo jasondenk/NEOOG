@@ -12,7 +12,7 @@ namespace FinalProject.Models
         public int ID { get; set; }
         [Display(Name = "Item")]
         public string NameType { get; set; }
-        [Display(Name = "Description")]
+        [Display(Name = "Gardener's Notes")]
         public string Info { get; set; }
         [Display(Name = "Have or Need?")]
         public string GetGive { get; set; }

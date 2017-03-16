@@ -61,7 +61,10 @@
     </dl>
     <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>
 </div>
+@if (User.Identity.Name == Model.ExchangeUserName || User.Identity.Name == "admin")
+{
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
 </p>
+}
+<p>@Html.ActionLink("Back to List", "Index")</p>
