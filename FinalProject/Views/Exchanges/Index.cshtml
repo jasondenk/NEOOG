@@ -2,9 +2,71 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutRightSideBar.cshtml";
+    ViewBag.Title = Html.Settings().PageTitle ?? Html.Settings().ForumName;
+    ViewBag.MetaDesc = Html.Settings().MetaDesc;
 }
+@section side
+{
+    @Html.Partial("_CommonSideNav")
+}
+<style>
+    #exchangerow{
+        opacity:.85;
+        filter:alpha(opacity=50)
+    }
+    #exchangeBody{
+        background-color:lightcyan;
+    }
+    #buttonOfficial{
+        font-family:Andalus;
+        color:black;
+    }
+    a:visited{
+        color:white;
+    }
+</style>
+<body id="exchangeBody">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="row" id="exchangerow">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-12">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <div id="itemdetails">
 
-<h2>Index</h2>
+                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName)</p>
+                                <p>@Html.DisplayFor(modelItem => item.NameType)</p>
+                                <p>@Html.DisplayFor(modelItem => item.Info)</p>
+                                <p>@Html.DisplayFor(modelItem => item.GetGive)</p>
+                                <p>@Html.DisplayFor(modelItem => item.Quantity)</p>
+                                <p>@Html.DisplayFor(modelItem => item.PostTime)</p>
+
+                                <div id="buttonOfficial">
+                                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->
+                                    @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
+                                    {
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" })
+                                    }
+                                    @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
+                                    {
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger", role = "button" })
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</body>
+
+
+
+@*<h2>Index</h2>
 @if (User.Identity.IsAuthenticated)
 
 {
@@ -72,4 +134,4 @@
 }
 
 </table>
-}
+}*@

@@ -1001,6 +1001,7 @@
     <Content Include="Content\Images\emoticons\unsure-emoticon.png" />
     <Content Include="Content\Images\emoticons\wink-emoticon.png" />
     <Content Include="Content\Images\emoticons\winking-face-facebook-symbol.png" />
+    <Content Include="Content\Images\GardeninHand.png" />
     <Content Include="Content\Images\icon-poll.png" />
     <Content Include="Content\Images\icon-sticky.png" />
     <Content Include="Content\Images\mail-add.png" />

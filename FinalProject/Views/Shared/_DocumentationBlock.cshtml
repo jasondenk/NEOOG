@@ -1,10 +1,35 @@
 ﻿
+<style>
+    * {
+        color: white;
+        background-color: darkseagreen;
+    }
+
+    a:link {
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    #WeatherBox {
+        background-color: yellow;
+        align-content: center;
+        color: white;
+    }
+
+    #OrganicBox {
+        background-color: yellow;
+        align-content: center;
+        color: blue;
+    }
+</style>
 <div class="row documentation-message">
     <div class="col-md-6">
         <div class="panel panel-mvc">
-            <div class="panel-heading"><a href="https://www.wunderground.com/weather-forecast/44124">Northeast Ohio Weather</a></div>
+            <div class="panel-heading" id="WeatherBox"><a href="https://www.wunderground.com/weather-forecast/44124">Northeast Ohio Weather</a></div>
             <div class="panel-body">
-
                 <p>Currently: <img id="WeatherImage" src="" />  &nbsp;&nbsp;&nbsp;Location: <span id="name"></span></p>
                 <p>Weather: <span id="weather"></span></p>
                 <p>Current Temperature: <span id="temperature"></span></p>
@@ -57,9 +82,8 @@ Low:<span id="day1low"></span>            Low:<span id="day2low"></span>        
     </div>
     <div class="col-md-6">
         <div class="panel panel-mvc">
-            <div class="panel-heading">Organic Gardening Articles</div>
+            <div class="panel-heading" id="OrganicBox">Organic Gardening Articles</div>
             <div class="panel-body">
-
                 <!-- Carousel
                 ================================================== -->
                 <div id="myCarousel" class="carousel slide">
@@ -112,6 +136,5 @@ Low:<span id="day1low"></span>            Low:<span id="day2low"></span>        
                 </div><!-- End Carousel -->
             </div>
         </div>
-
     </div>
 </div>
