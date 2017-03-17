@@ -389,6 +389,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703151352029_InitialCreate.cs" />
+    <Compile Include="Migrations\201703151352029_InitialCreate.Designer.cs">
+      <DependentUpon>201703151352029_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703172340244_AddHaveWant.cs" />
+    <Compile Include="Migrations\201703172340244_AddHaveWant.Designer.cs">
+      <DependentUpon>201703172340244_AddHaveWant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Exchange.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -1668,7 +1677,14 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703151352029_InitialCreate.resx">
+      <DependentUpon>201703151352029_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703172340244_AddHaveWant.resx">
+      <DependentUpon>201703172340244_AddHaveWant.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />

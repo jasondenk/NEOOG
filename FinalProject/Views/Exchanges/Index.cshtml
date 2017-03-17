@@ -23,12 +23,19 @@
         color:black;
     }
     a:visited{
-        color:white;
+        color:black;
+    }
+    #createNew{
+        color:black;
+        font-size:14px;
     }
 </style>
 <body id="exchangeBody">
     @if (User.Identity.IsAuthenticated)
     {
+        <p id="createNew">
+            @Html.ActionLink("Create New", "Create")
+        </p>
         <div class="row" id="exchangerow">
             @foreach (var item in Model)
             {
@@ -37,12 +44,13 @@
                         <div class="caption">
                             <div id="itemdetails">
 
-                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName)</p>
+                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName)   <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a></p>
                                 <p>@Html.DisplayFor(modelItem => item.NameType)</p>
                                 <p>@Html.DisplayFor(modelItem => item.Info)</p>
-                                <p>@Html.DisplayFor(modelItem => item.GetGive)</p>
+                                <p>@Html.DisplayFor(modelItem => item.HaveNeed)</p>
                                 <p>@Html.DisplayFor(modelItem => item.Quantity)</p>
                                 <p>@Html.DisplayFor(modelItem => item.PostTime)</p>
+                                
 
                                 <div id="buttonOfficial">
                                     @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->

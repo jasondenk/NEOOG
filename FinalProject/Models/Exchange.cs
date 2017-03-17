@@ -15,13 +15,18 @@ namespace FinalProject.Models
         [Display(Name = "Gardener's Notes")]
         public string Info { get; set; }
         [Display(Name = "Have or Need?")]
-        public string GetGive { get; set; }
+        public GetGive HaveNeed { get; set; }
         public string Quantity { get; set; }
         [Display(Name = "Date Posted")]
         public DateTime PostTime { get; set; }
         [Display(Name = "Username")]
         public string ExchangeUserName { get; set; }
 
-
+        public enum GetGive
+        {
+            Have,
+            Need,
+            Complete
+        }
     }
 }
