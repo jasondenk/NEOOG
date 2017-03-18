@@ -10,7 +10,11 @@
 {
     @Html.Partial("_CommonSideNav")
 }
-
+<style>
+    #exchangeBody{
+        background-color:lightcyan;
+    }
+</style>
 
 @*<h2>Edit</h2>*@
 @if (User.Identity.IsAuthenticated)
@@ -19,7 +23,7 @@
     {
     @Html.AntiForgeryToken()
 
-        <body>
+        <body id="exchangeBody">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="thumbnail">

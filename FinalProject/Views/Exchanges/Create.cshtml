@@ -10,6 +10,11 @@
 {
     @Html.Partial("_CommonSideNav")
 }
+<style>
+    #exchangeBody{
+        background-color:lightcyan;
+    }
+</style>
 @if (User.Identity.IsAuthenticated)
 {
     @*<h2>Create</h2>*@
@@ -19,7 +24,7 @@ using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-    <body>
+    <body id="exchangeBody">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="thumbnail">
@@ -55,14 +60,9 @@ using (Html.BeginForm())
                               
                                     @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
                                     @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
-                               
-                                    <class type="submit" value="Create" class="btn btn-default" />
-                                
-
-    @Html.ActionLink("Cancel New Item", "Index")
-
-
                             </dl>
+                        <input type="submit" value="Create" class="btn btn-default" />
+                        @Html.ActionLink("Cancel New Item", "Index")
                         </div>
                     </div>
                 </div>
