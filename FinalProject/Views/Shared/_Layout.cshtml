@@ -11,6 +11,7 @@
     TempData[AppConstants.CurrentAction] = ViewContext.RouteData.GetRequiredString("action").ToLower();
     TempData[AppConstants.CurrentController] = ViewContext.RouteData.GetRequiredString("controller").ToLower();
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
@@ -63,7 +64,7 @@
 
     <header>
 
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" id="NavDefault" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle menu-btn">
@@ -73,7 +74,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="@Url.Action("Index", "Home")">
-                        <img src="@Url.Content(theme.ThemePath + "/content/images/NOOG.png")" alt="@Html.Lang("Site.MvcForum")" class="NOOG"/>                        
+                        <img src="@Url.Content(theme.ThemePath + "/content/images/NEOOG.jpg")" alt="@Html.Lang("Site.MvcForum")" class="NOOG"/>                        
                     </a>
                 </div>
 
@@ -161,3 +162,4 @@
     }    
 </body>
 </html>
+

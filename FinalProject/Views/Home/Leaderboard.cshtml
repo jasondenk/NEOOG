@@ -1,38 +1,49 @@
 ﻿@{
-    Layout = "~/Views/Shared/_LayoutRightSideBar.cshtml";
-    ViewBag.Title = Html.LanguageString("Leaderboard.LeaderboardTitle");
+    ViewBag.Title = Html.LanguageString("Information");
 }
+<div>Find Local Farmer's Markets/Farms: <a target="_blank" href="http://www.localharvest.org/cleveland-oh/farmers-markets">LocalHarvest.org</a></div>
+<br /><br />
+<div>What's in season: <a target="_blank" href="https://ofbf.org/app/uploads/2015/06/whats-in-season.pdf">Produce Chart</a></div>
+<br /><br />
+<div>DIY composting resources:</div>
+<ul>
+    <li><a id="" target="_blank" href="http://eartheasy.com/grow_compost.html">earth easy</a></li>
+    <li><a id="" target="_blank" href="https://www.planetnatural.com/composting-101/">planet natural</a></li>
+</ul>
+<br /><br />
+<div>NE Ohio Community Gardening Resources</div>
+<ul>
+    <li><a id="" target="_blank" href="http://cccfoodpolicy.org/category/topic/community-gardens">Food Policy Coaltion</a></li>
+    <li><a id="" target="_blank" href="https://cuyahoga.osu.edu/program-areas/agriculture-and-natural-resources/community-gardening">Ohio State University Extension</a></li>
+    <li><a target="_blank" href="http://www.greaterclevelandfoodbank.org/programs/community-gardens">Greater Cleveland Food Bank</a></li>
+</ul>
+<br /><br />
+<div>Useful Books:</div>
+<ul>
+    <li><a id="" target="_blank" href="https://www.amazon.com/Carrots-Love-Tomatoes-Companion-Successful/dp/1580170277">Carrots Love Tomatoes</a></li>
+    <li><a id="" target="_blank" href="https://www.amazon.com/Teaming-Microbes-Organic-Gardeners-Revised/dp/1604691131">Teaming With Microbes</a></li>
+</ul>
+@*@section Header {
+            @(
+            Bundle.JavaScript()
+                .Add("~/Scripts/leaderboard.js")
+                .MvcRender("~/scripts/cache/leaderboard-combined_#.js")
+        )
+    }*@
+@*<div class="leaderboard">
 
-@section side
-{
-    @Html.Partial("_CommonSideNav")
-}
-
-@section Header {
-        @(
-        Bundle.JavaScript()
-            .Add("~/Scripts/leaderboard.js")            
-            .MvcRender("~/scripts/cache/leaderboard-combined_#.js")
-    )
-}
-
-<div class="leaderboard">
-    
-    <div class="row">
-        <div class="col-md-6 thisweeksstars">
-            <h2>@Html.LanguageString("Leaderboard.ThisWeeksStars")</h2>
-
-            <div class="leaderboardholders thisweekleaderboard">
-                <span class="ajaxspinner" title="@Html.LanguageString("Ajax.PleaseWait")">@Html.LanguageString("Ajax.PleaseWait")</span>
+        <div class="row">
+            <div class="col-md-6 thisweeksstars">
+                <h2>@Html.LanguageString("Leaderboard.ThisWeeksStars")</h2>
+                <div class="leaderboardholders thisweekleaderboard">
+                    <span class="ajaxspinner" title="@Html.LanguageString("Ajax.PleaseWait")">@Html.LanguageString("Ajax.PleaseWait")</span>
+                </div>
             </div>
-
-        </div>
-        <div class="col-md-6 thisyearsstars">
-            <h2>@Html.LanguageString("Leaderboard.ThisYearsStars")</h2>
-            <div class="leaderboardholders alltimeleaderboard">
-                <span class="ajaxspinner" title="@Html.LanguageString("Ajax.PleaseWait")">@Html.LanguageString("Ajax.PleaseWait")</span>
+            <div class="col-md-6 thisyearsstars">
+                <h2>@Html.LanguageString("Leaderboard.ThisYearsStars")</h2>
+                <div class="leaderboardholders alltimeleaderboard">
+                    <span class="ajaxspinner" title="@Html.LanguageString("Ajax.PleaseWait")">@Html.LanguageString("Ajax.PleaseWait")</span>
+                </div>
             </div>
         </div>
-    </div>
-
-</div>
+    </div>*@

@@ -4,6 +4,16 @@
     ViewBag.Title = Html.Settings().PageTitle ?? Html.Settings().ForumName;
     ViewBag.MetaDesc = Html.Settings().MetaDesc;
 }
+<style>
+    body {
+        font-family: Impact;
+        background-image: url('../../Themes/Metro/Content/Images/Vegtable Background 2.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        padding-bottom:50px;
+    }
+
+</style>
     
 
 @section side
@@ -15,7 +25,10 @@
 @Html.Partial("_DocumentationBlock")
 @* ### Remove ME - Not needed, just for our forum ### *@
 
+
+<div id="topics">
 @Html.Action("LatestTopics", "Topic")
+    </div>
 @*
     If you want to show categories on the home page instead of topics
     Just uncomment this action out and delete this text (And comment out the above action)
