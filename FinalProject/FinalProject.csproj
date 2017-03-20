@@ -1463,8 +1463,14 @@
     <Content Include="Themes\Metro\Content\Images\apple-touch-icon-57-precomposed.png" />
     <Content Include="Themes\Metro\Content\Images\arrow-spinner-blue.gif" />
     <Content Include="Themes\Metro\Content\Images\favicon.ico" />
+    <Content Include="Themes\Metro\Content\Images\frame-halves-fruit-vegetables-white-background-31464578.jpg" />
+    <Content Include="Themes\Metro\Content\Images\Garden Background.jpg" />
     <Content Include="Themes\Metro\Content\Images\logo.png" />
+    <Content Include="Themes\Metro\Content\Images\NEOOG.jpg" />
     <Content Include="Themes\Metro\Content\Images\NOOG.PNG" />
+    <Content Include="Themes\Metro\Content\Images\Pasted image at 2017_03_16 11_15 AM.png" />
+    <Content Include="Themes\Metro\Content\Images\Vegtable Background 2.jpg" />
+    <Content Include="Themes\Metro\Content\Images\Vegtable Background.jpg" />
     <Content Include="Themes\Metro\Content\Scripts\general.js" />
     <Content Include="Themes\Metro\Content\Styles\imports.css" />
     <Content Include="Themes\Metro\Content\Styles\Theme.min.css" />
@@ -1590,14 +1596,6 @@
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\readme.md" />
     <Content Include="Scripts\tinymce\langs\readme.md" />
-    <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
-    <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
-    <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
-    <None Include="_bin_deployableAssemblies\x86\sqlceer40EN.dll" />
-    <None Include="_bin_deployableAssemblies\x86\sqlcecompact40.dll" />
-    <None Include="_bin_deployableAssemblies\x86\sqlceca40.dll" />
-    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
-    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceme40.dll" />
@@ -1666,7 +1664,6 @@
     <Content Include="Views\Exchanges\Edit.cshtml" />
     <Content Include="Views\Exchanges\Index.cshtml" />
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
-    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
