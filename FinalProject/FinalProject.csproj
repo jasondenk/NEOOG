@@ -1472,8 +1472,10 @@
     <Content Include="Themes\Metro\Content\Images\apple-touch-icon-57-precomposed.png" />
     <Content Include="Themes\Metro\Content\Images\arrow-spinner-blue.gif" />
     <Content Include="Themes\Metro\Content\Images\favicon.ico" />
+    <Content Include="Themes\Metro\Content\Images\foodHeart.PNG" />
     <Content Include="Themes\Metro\Content\Images\frame-halves-fruit-vegetables-white-background-31464578.jpg" />
     <Content Include="Themes\Metro\Content\Images\Garden Background.jpg" />
+    <Content Include="Themes\Metro\Content\Images\Leaves.jpg" />
     <Content Include="Themes\Metro\Content\Images\logo.png" />
     <Content Include="Themes\Metro\Content\Images\NEOOG.jpg" />
     <Content Include="Themes\Metro\Content\Images\NOOG.PNG" />
@@ -1633,7 +1635,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

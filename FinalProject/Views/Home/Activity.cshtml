@@ -14,22 +14,29 @@
 }
 <style>
     body {
-        background-image: url('../../Themes/Metro/Content/Images/Garden Background.jpg');
-        font-family: Impact;
+        background-image: url('../../Themes/Metro/Content/Images/Leaves.jpg');
+        font-family: Cambria;
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
+        color: black;
     }
+    #lastActive {
+        color:white;
+    }
+    /*p.activitysubdate {
+        color:deeppink;
+    }*/
 </style>
 
 
 <div class="mainheading">
     <div class="widgetright">
-        @if (Html.Settings().EnableRSSFeeds)
+        @*@if (Html.Settings().EnableRSSFeeds)
         {
             <a title="@Html.LanguageString("Home.Rss")" href="@Url.Action("ActivityRss", "Home")" class="rsssubscribe">
                 <i class="fa fa-rss-square orange-colour"></i>
             </a>
-        }
+        }*@
     </div>
     <h1>@Html.Raw(ViewBag.Title)</h1>
 </div>
@@ -58,7 +65,7 @@
                                 @(string.Format("({0} {1})", badgeActivity.Badge.AwardsPoints, Html.LanguageString("Members.Points")))
                             }
                         </p>
-                        <p class="activitysubdate">
+                        <p id="lastActive" class="activitysubdate">
                             @DatesUI.GetPrettyDate(badgeActivity.ActivityMapped.Timestamp.ToString())
                         </p>
                     </div>
@@ -74,7 +81,7 @@
 
                     <div class="activityinfo col-md-11">
                         <p class="activityinfotext"><a href="@Html.Raw(memberJoinedActivity.User.NiceUrl)">@Html.Raw(memberJoinedActivity.User.UserName)</a> @Html.LanguageString("Activity.UserJoined")</p>
-                        <p class="activitysubdate">
+                        <p id="lastActive" class="activitysubdate">
                             @DatesUI.GetPrettyDate(memberJoinedActivity.ActivityMapped.Timestamp.ToString())
                         </p>
                     </div>
@@ -90,7 +97,7 @@
 
                     <div class="activityinfo col-md-11">
                         <p class="activityinfotext"><a href="@Html.Raw(profileUpdatedActivity.User.NiceUrl)">@Html.Raw(profileUpdatedActivity.User.UserName)</a> @Html.LanguageString("Activity.ProfileUpdated")</p>
-                        <p class="activitysubdate">
+                        <p id="lastActive" class="activitysubdate">
                            @DatesUI.GetPrettyDate(profileUpdatedActivity.ActivityMapped.Timestamp.ToString())
                         </p>
                     </div>

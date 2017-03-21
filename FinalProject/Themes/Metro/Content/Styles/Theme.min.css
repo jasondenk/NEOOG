@@ -6,7 +6,7 @@ input.form-control, textarea.form-control, select.form-control {
 
 .navbar {
     min-height: 60px;
-    font-family:Impact;
+    font-family:Tahoma;
     font-size:18px;
 }
 /*Changes Our Main Navbar added Our Logo*/
@@ -25,12 +25,10 @@ input.form-control, textarea.form-control, select.form-control {
         color: black;
         padding-top: 10px;
         padding-bottom: 10px;
-        background-color:lightgreen;
+        background-color:darkseagreen;
         align-content:stretch;
-        font-family:Impact;
-        font-style:italic;
-
-
+        font-family:tahoma;
+               
     }
 
         .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:visited:hover, .navbar-default .navbar-nav > li > a:visited:focus {
@@ -94,7 +92,7 @@ blockquote {
 }
 
 body {
-    font-family:Impact;
+    font-family:tahoma;
     color: blue;
 
 }
@@ -349,6 +347,7 @@ a, a:visited {
         color: #fff;
     }
 
+
 .btn-mvc-green, .btn-mvc-green:visited {
     display: inline-block;
     padding: 7px 20px;
@@ -374,7 +373,7 @@ a, a:visited {
     text-decoration: none;
     background-color: #efefef;
     color: #333;
-    background-color: #2abd54;
+    background-color: darkseagreen;
     color: #fff;
 }
 
@@ -2623,8 +2622,8 @@ div.mce-path {
 /*# sourceMappingURL=Theme.css.map */
 
 #secondNav{
-    background-color:green;
-    align-content:center;
+    background-color:darkseagreen;
+    
 }
 
 

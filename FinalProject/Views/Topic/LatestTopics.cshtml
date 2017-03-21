@@ -6,6 +6,16 @@
     var totalCount = Convert.ToInt32(Model.TotalCount);
     ViewBag.Canonical = Html.Raw(AppHelpers.CanonicalPagingTag(totalCount, Html.Settings().TopicsPerPage, Html));
 }
+<style>
+    h2 {
+        color:darkolivegreen;
+        font-size:48px;
+        text-decoration:underline;        
+        text-align:center;
+
+           }
+
+</style>
 
 <div class="latesttopics">
 
@@ -13,7 +23,8 @@
         <div class="widgetright hidden-xs">
        
         </div>
-        <h2>@Html.LanguageString("Home.LatestDiscussions")</h2>
+        <h2>@Html.LanguageString("Discussion Board")</h2>
+        @Html.Action("CreateTopicButton", "Topic")
     </div>
 
 

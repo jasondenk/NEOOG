@@ -3,6 +3,11 @@
 @{
     var postToolTip = string.Concat(StringUtils.ReturnAmountWordsFromString(StringUtils.StripHtmlFromString(Model.StarterPost.Post.PostContent), 50), "....");
 }
+@*<style>
+    #pinky {
+        color:deeppink;
+    }
+</style>*@
 @if (!Model.Permissions[SiteConstants.Instance.PermissionDenyAccess].IsTicked)
 {
 
@@ -10,7 +15,7 @@
 
         <div class="rowcreater hidden-xs">
             <a href="@Model.Topic.User.NiceUrl">
-                <img src="@Model.Topic.User.MemberImage(SiteConstants.Instance.GravatarTopicSize)" alt="@Model.Topic.User.UserName">
+                @*<img src="@Model.Topic.User.MemberImage(SiteConstants.Instance.GravatarTopicSize)" alt="@Model.Topic.User.UserName">*@
             </a>
             @if (Model.MemberIsOnline)
             {
@@ -20,8 +25,11 @@
             }
         </div>
 
+        <style>
+            .rowdetails {border-bottom:solid darkseagreen 2px;}
+        </style>
         <div class="rowdetails">
-            <p class="category categorysolved@(Model.Topic.Solved.ToString().ToLower())" style="border-color: @(string.IsNullOrEmpty(Model.Topic.Category.Colour) ? "#ced1d1" : Model.Topic.Category.Colour)">@Html.LanguageString("Topic.Category"): <a href="@Model.Topic.Category.NiceUrl">@Model.Topic.Category.Name</a></p>
+            @*<p class="category categorysolved@(Model.Topic.Solved.ToString().ToLower())" style="border-color: @(string.IsNullOrEmpty(Model.Topic.Category.Colour) ? "#ced1d1" : Model.Topic.Category.Colour)">@Html.LanguageString("Topic.Category"): <a href="@Model.Topic.Category.NiceUrl">@Model.Topic.Category.Name</a></p>*@
             <h3>
                 <a title="@postToolTip" href="@Html.Raw(Model.Topic.NiceUrl)">
                     @if (Model.Topic.IsSticky)
@@ -59,9 +67,9 @@
             }
 
             <p class="topicrowfooterinfo">
-                <a href="@Html.Raw(Model.LastPostPermaLink)">
+                @*<a href="@Html.Raw(Model.LastPostPermaLink)">
                     <img src="@Model.Topic.LastPost.User.MemberImage(SiteConstants.Instance.GravatarLatestBySize)" class="latestby" alt="@Model.Topic.LastPost.User.UserName">
-                </a> 
+                </a>*@ 
                 <a href="@Html.Raw(Model.LastPostPermaLink)">
                     @Html.LanguageString("Topic.LatestBy")
                 </a> 
@@ -69,10 +77,11 @@
                     @Model.Topic.LastPost.User.UserName
                 </a> 
                 @DatesUI.GetPrettyDate(Model.Topic.LastPost.DateCreated.ToString()).
-                <span class="stats topicanswers"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> @Model.Answers.KiloFormat()</span>
+                
+                @*<span class="stats topicanswers"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> @Model.Answers.KiloFormat()</span>
                 <span class="stats topicviews"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> @Model.Views.KiloFormat()</span>
                 <span class="stats topicupvotes"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> @Model.VotesUp.KiloFormat()</span>
-                <span class="stats topicdownvotes"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> @Model.VotesDown.KiloFormat()</span>
+                <span class="stats topicdownvotes"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> @Model.VotesDown.KiloFormat()</span>*@
                 @if (Model.Topic.Solved)
                 {
                     <span class="stats topicsolved"><span class="glyphicon glyphicon-ok green-colour" aria-hidden="true"></span></span>

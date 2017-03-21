@@ -1,28 +1,49 @@
 ﻿@{
     ViewBag.Title = Html.LanguageString("Information");
 }
-<div>Find Local Farmer's Markets/Farms: <a target="_blank" href="http://www.localharvest.org/cleveland-oh/farmers-markets">LocalHarvest.org</a></div>
-<br /><br />
-<div>What's in season: <a target="_blank" href="https://ofbf.org/app/uploads/2015/06/whats-in-season.pdf">Produce Chart</a></div>
-<br /><br />
-<div>DIY composting resources:</div>
-<ul>
-    <li><a id="" target="_blank" href="http://eartheasy.com/grow_compost.html">earth easy</a></li>
-    <li><a id="" target="_blank" href="https://www.planetnatural.com/composting-101/">planet natural</a></li>
-</ul>
-<br /><br />
-<div>NE Ohio Community Gardening Resources</div>
-<ul>
-    <li><a id="" target="_blank" href="http://cccfoodpolicy.org/category/topic/community-gardens">Food Policy Coaltion</a></li>
-    <li><a id="" target="_blank" href="https://cuyahoga.osu.edu/program-areas/agriculture-and-natural-resources/community-gardening">Ohio State University Extension</a></li>
-    <li><a target="_blank" href="http://www.greaterclevelandfoodbank.org/programs/community-gardens">Greater Cleveland Food Bank</a></li>
-</ul>
-<br /><br />
-<div>Useful Books:</div>
-<ul>
-    <li><a id="" target="_blank" href="https://www.amazon.com/Carrots-Love-Tomatoes-Companion-Successful/dp/1580170277">Carrots Love Tomatoes</a></li>
-    <li><a id="" target="_blank" href="https://www.amazon.com/Teaming-Microbes-Organic-Gardeners-Revised/dp/1604691131">Teaming With Microbes</a></li>
-</ul>
+
+<style>
+    body {
+        color:black;
+        font-family: tahoma;
+        background-image: url('../../Themes/Metro/Content/Images/Leaves.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+    }
+    .information {font-size:30px;}
+    #link {color:white;
+           text-decoration:underline;
+           font-size:24px;     
+           font-family: tahoma;          
+    }
+</style>
+
+<div class="information">
+    <div>Find Local Farmer's Markets/Farms: <br/><a id="link" target="_blank" href="http://www.localharvest.org/cleveland-oh/farmers-markets">LocalHarvest.org</a></div>
+    
+    <div>What's in season: <br /><a id="link" target="_blank" href="https://ofbf.org/app/uploads/2015/06/whats-in-season.pdf">Produce Chart</a></div>
+    
+    <div>DIY composting resources:</div>
+    <ul>
+        <li><a id="link" target="_blank" href="http://eartheasy.com/grow_compost.html">Earth Easy</a></li>
+        <li><a id="link" target="_blank" href="https://www.planetnatural.com/composting-101/">Planet Natural</a></li>
+    </ul>
+    
+    <div>NE Ohio Community Gardening Resources</div>
+    <ul>
+        <li><a id="link" target="_blank" href="http://cccfoodpolicy.org/category/topic/community-gardens">Food Policy Coaltion</a></li>
+        <li><a id="link" target="_blank" href="https://cuyahoga.osu.edu/program-areas/agriculture-and-natural-resources/community-gardening">Ohio State University Extension</a></li>
+        <li><a id="link" target="_blank" href="http://www.greaterclevelandfoodbank.org/programs/community-gardens">Greater Cleveland Food Bank</a></li>
+    </ul>
+    
+    <div>Useful Books:</div>
+    <ul>
+        <li><a id="link" target="_blank" href="https://www.amazon.com/Carrots-Love-Tomatoes-Companion-Successful/dp/1580170277">Carrots Love Tomatoes</a></li>
+        <li><a id="link" target="_blank" href="https://www.amazon.com/Teaming-Microbes-Organic-Gardeners-Revised/dp/1604691131">Teaming With Microbes</a></li>
+    </ul>
+</div>
 @*@section Header {
             @(
             Bundle.JavaScript()

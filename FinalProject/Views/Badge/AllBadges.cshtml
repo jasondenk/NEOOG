@@ -1,6 +1,6 @@
 ﻿@model MVCForum.Website.ViewModels.AllBadgesViewModel
 @{
-    Layout = "~/Views/Shared/_LayoutRightSideBar.cshtml";
+    
     ViewBag.Title = Html.LanguageString("Plant Index");
 }
 <style>
@@ -8,23 +8,24 @@
         font-size: 48px;
         color: white;
         align-content:center;
-        opacity:.85;
+        /*opacity:.85;*/
         filter:alpha(opacity=50)
     }
 
     #letter {
         color: red;
-        font-size: 36px;
+        font-size:24px;
         font-weight: bold;
-        text-decoration:dashed;
+        padding-right:10px;
+        
         align-content:center;
-        opacity:0.4;
+        
         
     }
 
     #plant {
         color: white;
-        opacity:0.4;
+        /*opacity:0.4;*/
         font-size:24px;
     }
 
@@ -35,9 +36,11 @@
         background-position: center;
         height:100%;
         background-size:cover;
-        font-family:Impact;
+        font-family:tahoma;
 
     }
+
+    ul {color:white;}
 </style>
 <div>
     @*@section side
@@ -46,37 +49,33 @@
             }*@
     <h1>Plant Index</h1>
     <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-        <ul class="nav navbar-nav">
-            <li><a id="letter" href="#a">A</a></li>
-            <li><a id="letter" href="#b">B</a></li>
-            <li><a id="letter" href="#c">C</a></li>
-            <li><a id="letter" href="#d">D</a></li>
-            <li><a id="letter" href="#e">E</a></li>
-            <li><a id="letter" href="#f">F</a></li>
-            <li><a id="letter" href="#g">G</a></li>
-            <li><a id="letter" href="#h">H</a></li>
-            <li><a id="letter" href="#i">I</a></li>
-            <li><a id="letter" href="#j">J</a></li>
-            <li><a id="letter" href="#k">K</a></li>
-            <li><a id="letter" href="#l">L</a></li>
-            <li><a id="letter" href="#m">M</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
-            <li><a id="letter" href="#n">N</a></li>
-            <li><a id="letter" href="#o">O</a></li>
-            <li><a id="letter" href="#p">P</a></li>
-            <li><a id="letter" href="#q">Q</a></li>
-            <li><a id="letter" href="#r">R</a></li>
-            <li><a id="letter" href="#s">S</a></li>
-            <li><a id="letter" href="#t">T</a></li>
-            <li><a id="letter" href="#u">U</a></li>
-            <li><a id="letter" href="#v">V</a></li>
-            <li><a id="letter" href="#w">W</a></li>
-            <li><a id="letter" href="#x">X</a></li>
-            <li><a id="letter" href="#y">Y</a></li>
-            <li><a id="letter" href="#z">Z</a></li>
-        </ul>
-    </div>
+            <a id="letter" href="#a">A</a>
+            <a id="letter" href="#b">B</a>
+            <a id="letter" href="#c">C</a>
+            <a id="letter" href="#d">D</a>
+            <a id="letter" href="#e">E</a>
+            <a id="letter" href="#f">F</a>
+            <a id="letter" href="#g">G</a>
+            <a id="letter" href="#h">H</a>
+            <a id="letter" href="#i">I</a>
+            <a id="letter" href="#j">J</a>
+            <a id="letter" href="#k">K</a>
+            <a id="letter" href="#l">L</a>
+            <a id="letter" href="#m">M</a>        
+            <a id="letter" href="#n">N</a>
+            <a id="letter" href="#o">O</a>
+            <a id="letter" href="#p">P</a>
+            <a id="letter" href="#q">Q</a>
+            <a id="letter" href="#r">R</a>
+            <a id="letter" href="#s">S</a>
+            <a id="letter" href="#t">T</a>
+            <a id="letter" href="#u">U</a>
+            <a id="letter" href="#v">V</a>
+            <a id="letter" href="#w">W</a>
+            <a id="letter" href="#x">X</a>
+            <a id="letter" href="#y">Y</a>
+            <a id="letter" href="#z">Z</a>
+            </div>
     <br /><br /><br />
     @*<section id=""></section>
         <ul>

@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<FinalProject.Models.Exchange>
-
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutRightSideBar.cshtml";
@@ -11,23 +10,34 @@
     @Html.Partial("_CommonSideNav")
 }
 <style>
-    #exchangerow{
-        opacity:.85;
-        filter:alpha(opacity=50)
+    #exchangerow {
+        opacity: .85;
+        filter: alpha(opacity=50);
     }
-    #exchangeBody{
-        background-color:lightcyan;
+
+    #exchangeBody {
+        background-color: lightcyan;
     }
-    #buttonOfficial{
-        font-family:Andalus;
-        color:black;
+
+    #buttonOfficial {
+        font-family: tahoma;
+        color: black;
     }
-    a:visited{
-        color:black;
+
+    a:visited {
+        color: black;
     }
-    #createNew{
-        color:black;
-        font-size:14px;
+
+    #createNew {
+        color: black;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma;
+        font: bold;
+        background-image: url('../../Themes/Metro/Content/Images/frame-halves-fruit-vegetables-white-background-31464578.jpg');
+        background-size: cover;
     }
 </style>
 <body id="exchangeBody">
@@ -44,29 +54,36 @@
                         <div class="caption">
                             <div id="itemdetails">
 
-                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName)   <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a></p>
-                                <p>@Html.DisplayFor(modelItem => item.NameType)</p>
-                                <p>@Html.DisplayFor(modelItem => item.Info)</p>
-                                <p>@Html.DisplayFor(modelItem => item.HaveNeed)</p>
-                                <p>@Html.DisplayFor(modelItem => item.Quantity)</p>
-                                <p>@Html.DisplayFor(modelItem => item.PostTime)</p>
-                                
+                                <p>
+                                    @Html.DisplayFor(modelItem => item.ExchangeUserName)
+                                @if (item.ExchangeUserName == "admin")
+                                {<a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                                @if (item.ExchangeUserName == "theandy18")
+                                {<a href="/privatemessage/view/?from=7ab21651-ebc4-4fb9-aeba-a72f01129f69" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                                @if (item.ExchangeUserName == "farmersonly")
+                                {<a href="/privatemessage/view/?from=88c7624e-8487-4b57-870b-a73901896c8e" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                            </p>
+                            <p>@Html.DisplayFor(modelItem => item.NameType)</p>
+                            <p>@Html.DisplayFor(modelItem => item.Info)</p>
+                            <p>@Html.DisplayFor(modelItem => item.HaveNeed)</p>
+                            <p>@Html.DisplayFor(modelItem => item.Quantity)</p>
+                            <p>@Html.DisplayFor(modelItem => item.PostTime)</p>
 
-                                <div id="buttonOfficial">
-                                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->
-                                    @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
-                                    {
-                                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" })
-                                    }
-                                    @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
-                                    {
-                                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger", role = "button" })
-                                    }
-                                </div>
+                            <div id="buttonOfficial">
+                                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->
+                                @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
+                                {
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" })
+                                }
+                                @if (User.Identity.Name == item.ExchangeUserName || User.Identity.Name == "admin")
+                                {
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger", role = "button" })
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             }
         </div>
     }
@@ -143,3 +160,37 @@
 
 </table>
 }*@
+
+
+
+@*<style>
+    #exchangerow {
+        opacity: .85;
+        filter: alpha(opacity=50);
+    }
+
+    #exchangeBody {
+        background-color: lightcyan;
+    }
+
+    #buttonOfficial {
+        font-family: tahoma;
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    #createNew {
+        color: black;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma;
+        font: bold;
+        background-image: url('../../Themes/Metro/Content/Images/frame-halves-fruit-vegetables-white-background-31464578.jpg');
+        background-size: cover;
+    }
+</style>*@
