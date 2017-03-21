@@ -43,14 +43,21 @@
                     <div class="thumbnail">
                         <div class="caption">
                             <div id="itemdetails">
-
-                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName)   <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a></p>
+                                
+                                <p>@Html.DisplayFor(modelItem => item.ExchangeUserName) 
+                                @if (item.ExchangeUserName == "admin")
+                                {<a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                                @if (item.ExchangeUserName == "theandy18")
+                                {<a href="/privatemessage/view/?from=7ab21651-ebc4-4fb9-aeba-a72f01129f69" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                                @if (item.ExchangeUserName == "farmersonly")
+                                {<a href="/privatemessage/view/?from=88c7624e-8487-4b57-870b-a73901896c8e" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => item.ExchangeUserName)">Message Me</a>}
+                                </p>
                                 <p>@Html.DisplayFor(modelItem => item.NameType)</p>
                                 <p>@Html.DisplayFor(modelItem => item.Info)</p>
                                 <p>@Html.DisplayFor(modelItem => item.HaveNeed)</p>
                                 <p>@Html.DisplayFor(modelItem => item.Quantity)</p>
                                 <p>@Html.DisplayFor(modelItem => item.PostTime)</p>
-                                
+                
 
                                 <div id="buttonOfficial">
                                     @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-success", role = "button" }) <!--These three will get their own buttons-->

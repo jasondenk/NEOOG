@@ -66,7 +66,12 @@
                             @Html.DisplayFor(model => model.PostTime)
                         </dd>
                     </dl>
-                    <a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>
+                    @if (Model.ExchangeUserName == "admin")
+                    {<a href="/privatemessage/view/?from=cf44b1a0-43d4-4f0e-bdda-a72f01106fc4" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>}
+                    @if (Model.ExchangeUserName == "theandy18")
+                    {<a href="/privatemessage/view/?from=7ab21651-ebc4-4fb9-aeba-a72f01129f69" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>}
+                    @if (Model.ExchangeUserName == "farmersonly")
+                    {<a href="/privatemessage/view/?from=88c7624e-8487-4b57-870b-a73901896c8e" class="btn-mvc pm-panel" data-name="Message:@Html.DisplayFor(model => model.ExchangeUserName)">Message Me</a>}
                 </div>
                 @if (User.Identity.Name == Model.ExchangeUserName || User.Identity.Name == "admin")
                 {

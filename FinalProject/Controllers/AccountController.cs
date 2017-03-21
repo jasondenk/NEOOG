@@ -149,6 +149,7 @@ namespace FinalProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+           
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
@@ -177,6 +178,7 @@ namespace FinalProject.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
         {
+            
             if (userId == null || code == null)
             {
                 return View("Error");
@@ -249,6 +251,7 @@ namespace FinalProject.Controllers
                 return View(model);
             }
             var user = await UserManager.FindByNameAsync(model.Email);
+            
             if (user == null)
             {
                 // Don't reveal that the user does not exist
