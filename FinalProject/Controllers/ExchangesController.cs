@@ -48,6 +48,9 @@ namespace FinalProject.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,NameType,Info,HaveNeed,Quantity")] Exchange exchange)
         {
+            //UserManager<ApplicationUser> UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+            //ApplicationUser currentUser = UserManager.FindById(User.Identity.GetUserId());
+            //UserManager.FindByName(User.Identity.Name);
             exchange.ExchangeUserName = User.Identity.Name;
             exchange.PostTime = DateTime.Now;
             if (ModelState.IsValid)
