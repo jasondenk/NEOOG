@@ -14,6 +14,9 @@
         text-align:center;
 
            }
+    #Register { text-align:center;
+         color:orangered;
+    }
 
 </style>
 
@@ -24,6 +27,10 @@
        
         </div>
         <h2>@Html.LanguageString("Discussion Board")</h2>
+@if (!User.Identity.IsAuthenticated)
+{
+        <h4 id="Register">Register at top of page in order to post.</h4>
+}
         @Html.Action("CreateTopicButton", "Topic")
     </div>
 
