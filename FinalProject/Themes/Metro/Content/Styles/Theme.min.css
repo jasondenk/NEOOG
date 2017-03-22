@@ -15,7 +15,7 @@ input.form-control, textarea.form-control, select.form-control {
     border: none;
     border-radius: 0;
     color:black;
-    border:solid 5px;
+    border:solid black 1px;
     background-color:white;
     justify-content:center;
 

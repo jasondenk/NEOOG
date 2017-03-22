@@ -10,12 +10,20 @@
         /*background-image: url('../../Themes/Metro/Content/Images/frame-halves-fruit-vegetables-white-background-31464578.jpg');
         background-size:contain;*/
     }
+    #letter {
+        font-family:Tahoma;
+        border: solid darkseagreen 3px;
+        color: darkseagreen;
+    }
 
 </style>
     
 
 @section side
 {
+    <a id="letter" href="#topics">GO TO DISCUSSION BOARD</a>
+    <p></p>
+    
     @Html.Partial("_CommonSideNav")
 }
 
